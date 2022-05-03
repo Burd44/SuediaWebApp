@@ -1,0 +1,46 @@
+﻿@model IEnumerable<SuediaWebApp.Models.Article>
+
+@{
+    ViewData["Title"] = "Articole";
+}
+
+<h1>Articole</h1>
+
+<p>
+    <a asp-controller="Articles" asp-action="Create" class="btn btn-primary" style="border-radius:25px;"><i class="bi bi-arrow-right-square"></i> Adăugați un articol nou</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Author)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>Opțiuni</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.Id" style="text-decoration:none;"><h2>@Html.DisplayFor(modelItem => item.Title)</h2></a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td style="width:12%;">
+                <a asp-action="Edit" asp-controller="Articles" asp-route-id="@item.Id" class="btn btn-success" style="border-radius:25px; margin:5px;"><i class="bi bi-pencil"></i> Editați</a><br />   
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger" style="border-radius:25px; margin:5px;"><i class="bi bi-trash"></i> Ștergere</a>
+            </td>         
+        </tr>
+} 
+    </tbody>
+</table>

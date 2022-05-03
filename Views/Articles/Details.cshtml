@@ -1,0 +1,28 @@
+﻿@model SuediaWebApp.Models.Article
+
+@{
+    ViewData["Title"] = "Vizualizare";
+}
+<br />
+<h1>@Html.DisplayFor(model => model.Title)</h1><br />
+
+<div>
+    <div class="row">
+        <h4 class="col-3">Publicat de: @Html.DisplayFor(model => model.Author)</h4>
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+        <p class="col-3">Data Publicării: @Html.DisplayFor(model => model.Date)</p>
+    </div>
+    <dl class="row">
+        <dd class = "col-md-12">
+            <hr size="10" width="100%" color="cyan">
+        </dd>
+        <dd class = "col-md-12">
+            <h4>@Html.DisplayFor(model => model.Content)</h4>
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-success" style="border-radius:25px;"><i class="bi bi-pencil"></i> Editați</a>
+    <a asp-action="Index" class="btn btn-dark" style="border-radius:25px;"><i class="bi bi-arrow-return-right"></i> Înapoi la lista de Articole</a>
+</div>

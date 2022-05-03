@@ -1,0 +1,298 @@
+﻿@model IEnumerable<SuediaWebApp.Models.Article>
+
+@{
+    ViewData["Title"] = "Acasă";
+}
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="~/css/pagini/Home.css" rel="stylesheet" />
+    <link href="~/css/bootswatch/bootstrap.min.css" rel="stylesheet" />
+</head>
+<div id="main"></div>
+<body>
+    <div class="text-center"  style="padding-top: 100px;">
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <h1 id="titlu" class="text-black">Suedia</h1>
+        <hr size="10" width="100%" color="cyan">
+        <h1 id="titlu" class="text-black">Capitala Scandinaviei</h1>
+    </div>
+    <div  style="padding-top: 800px; padding-bottom: 150px;">
+        <div id="Carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#Carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#Carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#Carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#Carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#Carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#Carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#Carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#Carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#Carousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#Carousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="~/assets/Suedia1.png" class="d-block w-100"> 
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 id="gray">Câmpia Skania</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/assets/Suedia2.png" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 id="gray">Podișul Suediei</h5>
+                        <p id="gray">subdivizat în Pod. Smoland și Pod.Norrland</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/assets/Suedia3.png" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 id="gray">Alpii Scandinaviei</h5>
+                        <p id="gray">cu altitudinea maximă în vf. Galdhopiggen alt. 2469 m</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/assets/Suedia4.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 id="gray">Stockholm</h5>
+                        <p id="gray">capitala Suediei</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/assets/Suedia5.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 id="gray">Malmö</h5>
+                        <p id="gray">cel mai vechi parc din lume Kungsparken</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/assets/Suedia6.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 id="gray">Gothenburg</h5>
+                        <p id="gray">orasul în care Volvo a fost fondat</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/assets/Suedia7.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 id="gray">Catedrala Uppsala</h5>
+                        <p id="gray">cea mai veche universitate din Suedia</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/assets/Suedia8.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 id="gray">Castelul Gripsholm</h5>
+                        <p id="gray">muzeu de artă</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/assets/Suedia9.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 id="gray">Castelul Skokloster</h5>
+                        <p id="gray">muzeu de arte textile și îmbrăcăminte regală</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/assets/Suedia10.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 id="gray">Muzeul Skansen</h5>
+                        <p id="gray">primul și cel mai cunoscut muzeu etnografic în aer liber din lume</p>  
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#Carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#Carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="card border-success mb-3">
+          <div class="card-header">Informații Generale</div>
+          <div class="card-body">
+            <h4 class="card-title">Suedia, Capitala Scandinaviei!</h4>
+            <p class="card-text">Când vă gândiţi la Suedia, probabil că sunteţi duşi cu gândul la Saab, Volvo, fructe de mare şi o vreme mai rece decât aţi vrea să suportaţi într-o vacanţă. Lucrurile nu stau deloc aşa, complexitatea acestei minunate ţări scandinave se ridică deasupra multor alte destinaţii turistice ale bătrânei Europe.</p>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="card border-primary mb-3">
+              <div class="card-header">Informații Generale</div>
+              <div class="card-body">
+                <h4 class="card-title">Poziția Geografică</h4>
+                <p class="card-text">
+                    - Pe glob: între 55°-69°lat.N și 10°-21°long E, traversată  de Cercul Polar de Nord
+                    <br />
+                    - Pe continent: N Europei, Peninsula  Scandinavia. Suediei îi aparțin o serie de insule din Marea Baltică, mai mari fiind Gotland și Oland
+                </p>
+                <br /><br />
+                <img src="https://th.bing.com/th/id/R.cd2d9408e789aaef135e4ba363c6efaf?rik=ixy%2f4PvvXVJsSw&riu=http%3a%2f%2fwww.guideoftheworld.com%2fwp-content%2fuploads%2f2017%2f09%2fsweden_physical_map-e1506444845439.jpg&ehk=9Xrm1S4tpzzh9Kmf0qEwEYf%2bnmuSRrGmL5HixyiTIoQ%3d&risl=&pid=ImgRaw&r=0" style="width:100%;" />
+              </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card border-primary mb-3">
+              <div class="card-header">Informații Generale</div>
+              <div class="card-body">
+                <h4 class="card-title">Trepte de Relief</h4>
+                <p class="card-text">- Este dezvoltat pe un substrat geologic foarte vechi: porțiuni din Platforma Est-Europeana (în est) și din structurile caledonieine (în vest)
+                    <br />
+                    - De la V la E se deosebesc trei trepte de relief:: 
+                    <br />
+                    - Alpii Scandinavi 
+                    <br />
+                    - Podișul Suediei
+                    <br />
+                    - Câmpia Skania 
+                </p>
+                <img src="https://i.pinimg.com/originals/5c/36/65/5c3665816066b6b4a5c5ec48517ce3e4.jpg" style="width:100%;" />
+              </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card border-primary mb-3">
+              <div class="card-header">Informații Generale</div>
+              <div class="card-body">
+                <h4 class="card-title">Clima</h4>
+                <p class="card-text">Influențată  de : vecinătatea Oceanului Atlantic,  Curentul Atlanticului  de Nord , prezența Alpilor Scandinaviei, circulația maselor de aer
+                    <br />
+                    Tipuri  de climă:
+                    <br />
+                    - Temperat-oceanica
+                    <br />
+                    - Temperat-continentală
+                    <br />
+                    - Subpolară
+                </p>
+                <img src="https://www.researchgate.net/profile/Stefan_Astroem/publication/326127146/figure/download/fig1/AS:643941472940032@1530539019078/annual-mean-regional-background-concentrations-of-NO2-in-Sweden-g-m-3.png" style="width:100%;" />
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="padding-bottom: 150px;">
+        <div class="col-4">
+            <div class="card border-warning mb-3">
+              <div class="card-header">Informații Generale</div>
+              <div class="card-body">
+                <h4 class="card-title">Hidrografia</h4>
+                <p class="card-text">Râuri scurte,cu debite mari, cu direcție predominantă NV-SE datorită orientării munților
+                    <br />
+                    - Multe canale care leagă râurile și lacurile-Canalul Gote
+                    <br />
+                    - 96 000 de lacuri tectono-glaciare: 
+                    <br />
+                    Vanern
+                    <br />
+                    Viitter
+                    <br />
+                    Malaren
+                    <br />
+                    - Multe limane
+                </p>
+                <br /><br /><br /><br />
+                <img src="https://th.bing.com/th/id/R.adcce095cea1e021eaa709ca964fef0e?rik=bA%2f4CNwkn8KgqA&riu=http%3a%2f%2fwww.maps-of-europe.net%2fmaps%2fmaps-of-sweden%2froad-map-of-sweden-with-cities-and-airports-small.jpg&ehk=urc6bXsANI433RfDpHnk1HCT7tHouEfnFzdIPvJYN6g%3d&risl=&pid=ImgRaw&r=0" style="width:100%;" />
+              </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card border-warning mb-3">
+              <div class="card-header">Informații Generale</div>
+              <div class="card-body">
+                <h4 class="card-title">Populația</h4>
+                <p class="card-text">- Totală-9 mil. loc
+                    <br />
+                    - Densitate-sub 50loc/km²
+                    <br />
+                    - Dinamica populației: 
+                    <br />
+                    natalitate-10,14‰
+                    <br />
+                    mortalitate-10,2 ‰
+                    <br />
+                    spor natural-0,12 ‰
+                    <br />
+                    - Structura populației: religioasă-religie luterană lingvistică-suedeza rezidențială-85% mediul urban după ocupație:
+                </p>
+                <img src="https://i.redd.it/bmdxsmlab2gy.png" style="width:100%;" />
+              </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card border-warning mb-3">
+              <div class="card-header">Informații Generale</div>
+              <div class="card-body">
+                <h4 class="card-title">Așezări</h4>
+                <p class="card-text">- Suedia este o monarhie constituțională, împărțită în 21 de comitate ,fiecare divizat în comune
+                    <br />
+                    -Istoric, Suedia este împărțită în trei regiuni:
+                    <br />
+                    Goteland
+                    <br />
+                    Svealand 
+                    <br />
+                    Norrland
+                </p>
+                <br /><br /><br />
+                <img src="https://3.bp.blogspot.com/-EOCU4lho8dQ/TdxIH5L9G6I/AAAAAAAACLM/HZ1wOiBCwl0/s1600/sweden_map_with_cities.jpg" style="width:100%;" />
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="padding-bottom: 200px;">
+        <div class="col-6">
+            <div class="card mb-3">
+              <h3 class="card-header">Articole</h3>
+              <div class="card-body">
+                <h5 class="card-title">Finlanda și Suedia au hotărât să ceară împreună aderarea la NATO. Cele două țări au stabilit data la care vor depune dosarul</h5>
+              </div>
+              <img src="~/assets/Nato.jpg" />
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+              <div class="card-body">
+                <p class="card-text">Finlanda și Suedia își vor exprima împreună dorința de a adera la NATO în luna mai, au informat luni, 25 aprilie, ziarele tabloide Iltalehti din Finlanda și Expressen din Suedia...</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Manolache Mihai</li>
+                <li class="list-group-item">25/04/2022</li>
+                <li class="list-group-item">21:16</li>
+              </ul>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Suedia urbană</h4>
+                <h6 class="card-subtitle mb-2 text-muted">Galerie</h6>
+                <p class="card-text">Colecția noastră de poze ce surprind perfect frumusețea arhitecturii post-moderniste încrucișată cu agitația urbană a Suediei.</p>
+                <a href="#" class="card-link">Link spre Galerie</a>
+              </div>
+            </div>
+            <br /><br />
+             <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Priveliști naturale</h4>
+                <h6 class="card-subtitle mb-2 text-muted">Galerie</h6>
+                <p class="card-text">Catalogul imaginilor faunei și florei Suedeze, păstrându-și autenticitatea nordica renumită.</p>
+                <a href="#" class="card-link">Link spre Galerie</a>
+              </div>
+            </div>
+            <br /><br />
+             <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Viața în provincie</h4>
+                <h6 class="card-subtitle mb-2 text-muted">Galerie</h6>
+                <p class="card-text">Pozele ce ne arată realitățile vieții la periferie în Suedia, dură și frumoasă.</p>
+                <a href="#" class="card-link">Link spre Galerie</a>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,28 @@
+﻿body {
+    background-image: url(https://worldstrides.com/wp-content/uploads/2018/12/Stockholm-Sweden.jpg);
+    background-repeat: no-repeat;
+}
+
+#titlu {
+    font-size: 100px;
+    font-family: 'Amatic SC', cursive;
+}
+
+#card {
+    border-radius: 25px;
+    border: 2px solid goldenrod;
+    background-color: yellow;
+}
+
+#main {
+    background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(15,37,55));
+    position: absolute;
+    top: 900px;
+    left: 0px;
+    right: 0px;
+    bottom: 4500px;
+}
+
+#gray {
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
