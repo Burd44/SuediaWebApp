@@ -25,7 +25,8 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model) 
+{
         <tr>
             <td>
                 <a asp-action="Details" asp-route-id="@item.Id" style="text-decoration:none;"><h2>@Html.DisplayFor(modelItem => item.Title)</h2></a>
